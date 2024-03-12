@@ -1,0 +1,89 @@
+body{
+    
+}
+.general{
+    display: flex;
+    justify-content: center;
+    background-image: url("../../assets/imagen_fut.jpg");
+    background-size: cover;
+    background-position: center center;
+    align-items: center;
+    height: 100vh;
+  
+}
+.equipos_marcador{
+    width: 45vw;
+    height: 27vw;
+    background:black;
+    opacity: 0.9;
+    border-radius: 1.8vw;
+    background-image: url("../../assets/fondo2.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+   
+}
+.equipos_marcador__mostrar{
+    display:flex;
+    justify-content:space-around ;
+    padding: 1.8vw;
+}
+.equipos_marcador__mostrar p{
+    color: white;
+    font-size: 2.4vw;
+    text-align: center;
+    font-weight: 700;
+}
+.equipos_marcador__mostrar input{
+    width: 9vw;
+    height: 2.8vw;
+    border-radius: 1vw;
+    border:none;
+    padding: 0.4vw;
+    margin-left: 1.5vw;  
+}
+.equipos_marcador__cuenta{
+    display:flex;
+    justify-content:space-around ;
+    
+}
+.cuenta__resultados{
+    width: 14vw;
+    height: 14vw;
+    border-radius:50%;
+    background-image:url("../../assets/balon_futbol-removebg-preview.png");
+    background-size: cover;
+    background-position:center;
+    
+}
+.cuenta__resultados h1{
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+    color: white;
+    font-size: 9.6vw;
+    font-weight: 600;
+    margin-top: 1.5vw;
+}
+.equipos_marcador__tiempo{
+    margin-top: 4vw;
+    margin-left: 4.5vw;
+    border-radius: 1.5vw;
+    position: absolute;
+    display:flex;
+    justify-content: center;
+    width: 70%;
+    height: 7vw;
+    background-image: url("../../assets/imagen_tiempo-removebg-preview.png");
+   
+}
+.equipos_marcador__tiempo p{
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+    color: white;
+    font-size: 3.6vw;
+    font-weight: 400;
+    margin-top: 1.5vw;
+    margin-left: 1.6vw;
+}
