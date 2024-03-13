@@ -1,3 +1,7 @@
+@font-face{
+    font-family: 'MyFont';
+    src: "../assets/DS-DIGIB.TTF" format("truetype");
+}
 *{
     padding: 0;
     margin: 0;

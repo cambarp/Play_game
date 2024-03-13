@@ -1,21 +1,27 @@
 <div class="general">
     <section class="equipos_marcador">
 
-        <div class="equipos_marcador__mostrar">
-            <input type="text" value="" placeholder="Ingresar Equipo 1" class="ingresar__equipo">
+        <form class="equipos_marcador__mostrar">
+            <input type="text" value="" name="dato1" placeholder="Ingresar Equipo 1" class="ingresar__equipo">
             <p>Vs</p>
             <input type="text" placeholder="Ingresar Equipo 2"  class="ingresar__equipo">
-        </div>
+        </form>
 
         <div class="equipos_marcador__cuenta">
-            <div class="cuenta__resultados"><h1>0</h1></div>
+            <div class="cuenta__resultados" ><h1>{{obetener}}</h1></div>
             <div class="cuenta__resultados"><h1>0</h1></div>
         </div>
         <div class="equipos_marcador__tiempo">
-            <p>Tiempo</p>
-            <p>00</p>
+            <div class="tiempo__defi">
+                <h1>Tiempo</h1>
+                <p>00</p>
+            </div>
         </div>
-
+       <div class="conte__hijo">
+            <app-resultados-partido (propagar)="recivirdato($event)"></app-resultados-partido>
+       </div>
     
     </section>
+   
+    
 </div>
