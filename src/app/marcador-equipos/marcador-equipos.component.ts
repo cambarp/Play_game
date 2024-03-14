@@ -10,8 +10,12 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './marcador-equipos.component.css'
 })
 export class MarcadorEquiposComponent {
-  obetener=0;
+ primer_dato=0
+ 
+
+
     recivirdato(dato : any){
-      this.obetener=dato;
+      this.primer_dato=dato;
+      
     }
 }

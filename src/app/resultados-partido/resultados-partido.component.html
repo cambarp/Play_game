@@ -2,10 +2,10 @@
     <section class="general__conte">
         <div class="conte__group">
             <section class="group_equipo">
-                <h1>Equipo 1</h1>
+                <h1>{{anotar_equipo_dos}}</h1>
             </section>
             <section class="group_anotar">
-                <button class="anotar" (click)="Anotar()" (click)="per_ganar()">Anotar 1</button>
+                <button class="anotar" (click)="per_ganar()" (click)="click_dos()" >Anotar 1</button>
             </section>
         </div>
         <div class="conte__iniciar">
@@ -13,10 +13,12 @@
         </div>
         <div class="conte__group">
             <section class="group_equipo">
-                <h1>Equipo 2</h1>
+                <h1>{{anotar_equipo_uno}}</h1>
+                <h1>{{mensaje}}</h1>
             </section>
+
             <section class="group_anotar">
-                <button class="anotar" (click)=" Anotar2() " (click)="per_ganar()" (click)="enviar()">Anotar 2</button>
+                <button class="anotar"  (click)="per_ganar()"  (click)="click_uno()" >Anotar 2</button>
             </section>
         </div>
     </section>

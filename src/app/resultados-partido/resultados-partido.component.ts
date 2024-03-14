@@ -1,3 +1,4 @@
+import { ArrayType } from '@angular/compiler';
 import { Component, Output, EventEmitter } from '@angular/core';
 
 @Component({
@@ -10,33 +11,34 @@ import { Component, Output, EventEmitter } from '@angular/core';
 export class ResultadosPartidoComponent {
   @Output()
   propagar = new EventEmitter<number>();
-  
 
-  enviar(){
-    this.propagar.emit(this.anotar_equipo_uno + this.anotar_equipo_dos);
+anotar_equipo_uno=0;
+anotar_equipo_dos=0;
+mensaje=""
+array=[]
+  click_uno(){
+    this.anotar_equipo_uno++;
   }
-      anotar_equipo_uno=0;
-      anotar_equipo_dos=0;
-       Anotar(){
-         this.anotar_equipo_uno++;
-       }
+  click_dos(){
+    this.anotar_equipo_dos++;
+  }
+      
+  per_ganar(){
+    this.propagar.emit()
+    console.log(this.array);
 
-       Anotar2(){
-         this.anotar_equipo_dos++;
-        
-       }
-       per_ganar(){
-        if (this.anotar_equipo_uno > this.anotar_equipo_dos){
-          console.log("Equipo uno vas ganando", this.anotar_equipo_uno);
-        }
-        else{
-          console.log("Equipo uno vas perdiendo", this.anotar_equipo_uno);
-        }
-        if (this.anotar_equipo_dos > this.anotar_equipo_uno){
-          console.log("Equipo dos vas ganando", this.anotar_equipo_dos);
-        }
-        else{
-          console.log("Equipo dos vas perdiendo", this.anotar_equipo_dos);
-        }
-       }
+      if (this.anotar_equipo_uno > this.anotar_equipo_dos){
+        this.mensaje="vas ganando";
+      }
+      else{
+        this.mensaje="vas perdiendo";
+      }
+      if (this.anotar_equipo_dos > this.anotar_equipo_uno){
+        console.log("Equipo dos vas ganando", this.anotar_equipo_dos);
+      }
+      else{
+        console.log("Equipo dos vas perdiendo", this.anotar_equipo_dos);
+      }
+      }
+      
 }
