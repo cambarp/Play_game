@@ -1,15 +1,17 @@
 <div class="general">
     <section class="equipos_marcador">
 
-        <form class="equipos_marcador__mostrar">
-            <input type="text" value="" name="dato1" placeholder="Ingresar Equipo 1" class="ingresar__equipo">
+        <form class="equipos_marcador__mostrar" >
+            <input type="text" [(ngModel)]="equipo1"  placeholder="Ingresar Equipo 1" class="ingresar__equipo">
             <p>Vs</p>
-            <input type="text" placeholder="Ingresar Equipo 2"  class="ingresar__equipo">
+            <input type="text" [(ngModel)]="equipo2" placeholder="Ingresar Equipo 2" class="ingresar__equipo">
+            
         </form>
+        
 
         <div class="equipos_marcador__cuenta">
-            <div class="cuenta__resultados" ><h1>{{primer_dato}}</h1></div>
-            <div class="cuenta__resultados"><h1>0</h1></div>     
+            <div class="cuenta__resultados" ><h1>{{valorEquipoDos}}</h1></div>
+            <div class="cuenta__resultados"><h1>{{valorEquipoUno}}</h1></div>     
         </div>
         <div class="equipos_marcador__tiempo">
             <div class="tiempo__defi">
@@ -18,7 +20,7 @@
             </div>
         </div>
        <div class="conte__hijo">
-            <app-resultados-partido (propagar)="recivirdato($event)"></app-resultados-partido>
+            <app-resultados-partido (enviarValores)="recibirValoresDelHijo($event)" [equipo1]="equipo1" [equipo2]="equipo2" ></app-resultados-partido>
        </div>
     
     </section>
