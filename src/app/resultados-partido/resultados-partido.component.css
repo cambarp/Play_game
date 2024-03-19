@@ -13,7 +13,7 @@
     justify-content: center;
     display: flex;
     justify-content: space-between;
-    width: 80%;
+    width: 100%;
 }
 .conte__group{
     width: 14vw;
@@ -31,7 +31,7 @@
     align-items:center;
 }
 .iniciar{
-    margin-top: 2.5vw;
+    margin: 4.6vw 3.7vw;
     padding: 0.7vw 1.8vw;
     border-radius: 0.4vw;
     border: none !important;
@@ -70,4 +70,41 @@
     font-size: 1vw;
     cursor: pointer !important;
 }
-.anotar :hover{}
+.resultados{
+    padding-top: 2.1vw;
+}
+
+.tiempo__defi{
+    padding: 2vw;
+    background-image:url("../../assets/balon_futbol-removebg-preview.png");
+    background-size: cover;
+    background-position:center;
+     
+}
+.equipos_marcador__tiempo{
+    display:flex;
+    width: 100%;
+    justify-content:center;
+    align-items:center;
+    height: 3.4vw;
+}
+.equipos_marcador__tiempo h1{
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+    color: white;
+    font-size: 2.1vw;
+    font-weight: 500;
+    margin-bottom: 1.4vw;
+    margin-top: 0.2vw;
+}
+.equipos_marcador__tiempo p{
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+    color: white;
+    font-size: 2.8vw;
+    font-weight: 400;
+    margin-top: 0.5vw;
+    cursor: pointer;
+}

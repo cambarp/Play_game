@@ -3,23 +3,29 @@
         <div class="conte__group">
             <section class="group_equipo">
                 <h1>{{equipo1}}</h1>
-                <h1></h1>
+                <h1 class="resultados">{{obtenerEstadoEquipo2()}}</h1>
             </section>
             <section class="group_anotar">
                 <button [disabled]="visible_uno" class="anotar" (click)="click_dos()" >Anotar 1</button>
             </section>
         </div>
         <div class="conte__iniciar">
-            <button class="iniciar" (click)="autorizar()">Iniciar</button>
+            <div class="equipos_marcador__tiempo">
+                <div class="tiempo__defi">
+                    <h1>Tiempo</h1>
+                    <p>{{tiempo}}</p>
+                </div>
+            </div>
+            <button [disabled]="botonIniciarActivo" class="iniciar" (click)="autorizar()">Iniciar</button>
         </div>
         <div class="conte__group">
             <section class="group_equipo">
                 <h1>{{equipo2}}</h1>
-                <h1></h1>
+                <h1 class="resultados">{{obtenerEstadoEquipo1()}}</h1>
             </section>
 
             <section class="group_anotar">
-                <button [disabled]="visible_dos" class="anotar"  (click)="click_uno();per_ganar()" >Anotar 2</button>
+                <button [disabled]="visible_dos" class="anotar"  (click)="click_uno()" >Anotar 2</button>
             </section>
         </div>
     </section>

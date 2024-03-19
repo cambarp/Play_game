@@ -13,13 +13,7 @@
             <div class="cuenta__resultados" ><h1>{{valorEquipoDos}}</h1></div>
             <div class="cuenta__resultados"><h1>{{valorEquipoUno}}</h1></div>     
         </div>
-        <div class="equipos_marcador__tiempo">
-            <div class="tiempo__defi">
-                <h1>Tiempo</h1>
-                <p (click)="p_visual()">{{tiempo}} </p>
-                <form class="tiempo_personal" id="tiempo"><input type="text" placeholder="ingresa tiempo"></form>
-            </div>
-        </div>
+        
        <div class="conte__hijo">
             <app-resultados-partido (enviarValores)="recibirValoresDelHijo($event)" [equipo1]="equipo1" [equipo2]="equipo2" ></app-resultados-partido>
        </div>
