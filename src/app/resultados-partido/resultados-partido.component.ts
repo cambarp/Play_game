@@ -10,37 +10,36 @@ import { Component, Output, EventEmitter,Input} from '@angular/core';
 })
 export class ResultadosPartidoComponent {
   @Output() enviarValores = new EventEmitter<{ equipoUno: number, equipoDos: number }>();
-  @Input() equipo1: string ="";
-  @Input() equipo2: string="";
-anotar_equipo_uno=0;
-anotar_equipo_dos=0;
-mensaje=""
+  @Input() equipo1: string ='';
+  @Input() equipo2: string='';
+  anotar_equipo_uno=0;
+  anotar_equipo_dos=0;
+
+  visible_uno=true;
+  visible_dos=true;
+  
 
   click_uno(){
     this.anotar_equipo_uno++;
     this.enviarValores.emit({ equipoUno: this.anotar_equipo_uno, equipoDos: this.anotar_equipo_dos });
-  
+
   }
+
   click_dos(){
     this.anotar_equipo_dos++;
     this.enviarValores.emit({ equipoUno: this.anotar_equipo_uno, equipoDos: this.anotar_equipo_dos });
   }
-      
-  per_ganar(){
-    
 
-      if (this.anotar_equipo_uno > this.anotar_equipo_dos){
-        this.mensaje="vas ganando";
-      }
-      else{
-        this.mensaje="vas perdiendo";
-      }
-      if (this.anotar_equipo_dos > this.anotar_equipo_uno){
-        console.log("Equipo dos vas ganando", this.anotar_equipo_dos);
-      }
-      else{
-        console.log("Equipo dos vas perdiendo", this.anotar_equipo_dos);
-      }
-      }
+  autorizar(){
+    this.visible_uno=false;
+    this.visible_dos=false;
+  }   
+
+  per_ganar(){
+     
+      
+      
+      
+    }
       
 }

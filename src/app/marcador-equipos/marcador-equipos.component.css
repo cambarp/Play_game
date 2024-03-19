@@ -102,9 +102,16 @@ body {
     font-size: 2.8vw;
     font-weight: 400;
     margin-top: 0.5vw;
+    cursor: pointer;
+}
+.equipos_marcador__tiempo:hover{
+    
 }
 .conte__hijo{
     margin-top: 1.4vw;
     justify-content: center; 
+}
+.tiempo_personal{
+    display: none !important;
 }
 

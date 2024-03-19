@@ -13,7 +13,8 @@ import { RouterModule } from '@angular/router';
 export class MarcadorEquiposComponent {
   equipo1: string = "";
   equipo2: string = "";
-
+  
+  tiempo=60;
  primer_dato=0
  valorEquipoUno=0
  valorEquipoDos=0
@@ -24,8 +25,7 @@ export class MarcadorEquiposComponent {
   
 }
 
-    recivirdato(dato : any){
-      this.primer_dato=dato;
-      
-    }
+p_visual(){
+  
+}
 }
