@@ -13,7 +13,8 @@
             <div class="equipos_marcador__tiempo">
                 <div class="tiempo__defi">
                     <h1>Tiempo</h1>
-                    <p>{{tiempo}}</p>
+                    <input class="personalizar" [(ngModel)]="tiempo" type="number" placeholder=" personalizar T">
+                    <p>{{mostrarTiempoRestante()}}</p>
                 </div>
             </div>
             <button [disabled]="botonIniciarActivo" class="iniciar" (click)="autorizar()">Iniciar</button>
